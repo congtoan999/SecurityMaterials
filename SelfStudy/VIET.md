@@ -1,7 +1,5 @@
 # SQL Injection: Những rủi ro tiềm ẩn và phương pháp phòng ngừa hiệu quả
 
-<small>*Cập nhật ngày: 01 tháng 07, 2024*</small>
-
 ## Nội dung của bài viết:
 [I. SQL Injection (SQLi) là gì?](#what-is-sql-injection)
 
