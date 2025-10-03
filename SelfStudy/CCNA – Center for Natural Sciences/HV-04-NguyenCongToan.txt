@@ -1,0 +1,729 @@
+Mon Sep 22 12:44:45 2025   R-WAN-TOAN   Router>enable
+Mon Sep 22 12:44:45 2025   R-WAN-TOAN   Router#configure terminal
+Mon Sep 22 12:44:45 2025   R-WAN-TOAN   Router(config)#interface GigabitEthernet0/0
+Mon Sep 22 12:44:46 2025   R-WAN-TOAN   Router(config-if)#no shutdown
+Mon Sep 22 12:44:50 2025   R-WAN-TOAN   Router(config-if)#exit
+Mon Sep 22 12:44:50 2025   R-WAN-TOAN   Router(config)#interface GigabitEthernet0/1
+Mon Sep 22 12:44:52 2025   R-WAN-TOAN   Router(config-if)#no shutdown
+Mon Sep 22 12:44:57 2025   R1-ISP-TOAN   Router>enable
+Mon Sep 22 12:44:57 2025   R1-ISP-TOAN   Router#configure terminal
+Mon Sep 22 12:44:57 2025   R1-ISP-TOAN   Router(config)#interface GigabitEthernet0/0
+Mon Sep 22 12:44:58 2025   R1-ISP-TOAN   Router(config-if)#no shutdown
+Mon Sep 22 12:44:59 2025   R1-ISP-TOAN   Router(config-if)#exit
+Mon Sep 22 12:44:59 2025   R1-ISP-TOAN   Router(config)#interface GigabitEthernet0/1
+Mon Sep 22 12:45:00 2025   R1-ISP-TOAN   Router(config-if)#no shutdown
+Mon Sep 22 12:45:01 2025   R1-ISP-TOAN   Router(config-if)#exit
+Mon Sep 22 12:45:01 2025   R1-ISP-TOAN   Router(config)#interface GigabitEthernet0/2
+Mon Sep 22 12:45:01 2025   R1-ISP-TOAN   Router(config-if)#no shutdown
+Mon Sep 22 12:45:06 2025   R3-ISP-TOAN   Router>enable
+Mon Sep 22 12:45:06 2025   R3-ISP-TOAN   Router#configure terminal
+Mon Sep 22 12:45:06 2025   R3-ISP-TOAN   Router(config)#interface GigabitEthernet0/0
+Mon Sep 22 12:45:07 2025   R3-ISP-TOAN   Router(config-if)#no shutdown
+Mon Sep 22 12:45:08 2025   R3-ISP-TOAN   Router(config-if)#exit
+Mon Sep 22 12:45:08 2025   R3-ISP-TOAN   Router(config)#interface GigabitEthernet0/1
+Mon Sep 22 12:45:09 2025   R3-ISP-TOAN   Router(config-if)#no shutdown
+Mon Sep 22 12:45:10 2025   R3-ISP-TOAN   Router(config-if)#exit
+Mon Sep 22 12:45:10 2025   R3-ISP-TOAN   Router(config)#interface GigabitEthernet0/2
+Mon Sep 22 12:45:11 2025   R3-ISP-TOAN   Router(config-if)#no shutdown
+Mon Sep 22 12:45:16 2025   R2-ISP-TOAN   Router>enable
+Mon Sep 22 12:45:16 2025   R2-ISP-TOAN   Router#configure terminal
+Mon Sep 22 12:45:16 2025   R2-ISP-TOAN   Router(config)#interface GigabitEthernet0/0
+Mon Sep 22 12:45:17 2025   R2-ISP-TOAN   Router(config-if)#no shutdown
+Mon Sep 22 12:45:18 2025   R2-ISP-TOAN   Router(config-if)#exit
+Mon Sep 22 12:45:18 2025   R2-ISP-TOAN   Router(config)#interface GigabitEthernet0/1
+Mon Sep 22 12:45:19 2025   R2-ISP-TOAN   Router(config-if)#no shutdown
+Mon Sep 22 12:45:20 2025   R2-ISP-TOAN   Router(config-if)#exit
+Mon Sep 22 12:45:20 2025   R2-ISP-TOAN   Router(config)#interface GigabitEthernet0/2
+Mon Sep 22 12:45:20 2025   R2-ISP-TOAN   Router(config-if)#no shutdown
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch>enable
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch#configure terminal
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch(config)#vlan 10
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch(config-vlan)#name GIAMDOC
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch(config-vlan)#vlan 20
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch(config-vlan)#name NHANSU
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch(config-vlan)#vlan 30
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch(config-vlan)#name KINHDOANH
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch(config-vlan)#vlan 40
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch(config-vlan)#name KETOAN
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch(config-vlan)#vlan 50
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch(config-vlan)#name PHONGIT
+Mon Sep 22 12:46:54 2025   CORW-SW-TOAN   Switch(config-vlan)#vlan 60
+Mon Sep 22 12:46:56 2025   CORW-SW-TOAN   Switch(config-vlan)#name SERVER
+Mon Sep 22 12:47:03 2025   ACC1   Switch>en
+Mon Sep 22 12:47:05 2025   ACC1   Switch#sho vlan
+Mon Sep 22 12:53:12 2025   ACC1   Switch#enable
+Mon Sep 22 12:53:12 2025   ACC1   Switch#configure terminal
+Mon Sep 22 12:53:12 2025   ACC1   Switch(config)#hostname ACC1-TOAN
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config)#vlan 10
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-vlan)#name GIAMDOC
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-vlan)#vlan 20
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-vlan)#name NHANSU
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-vlan)#interface FastEthernet0/1
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#switchport access vlan 10
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#interface FastEthernet0/2
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#switchport access vlan 10
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#interface FastEthernet0/3
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#switchport access vlan 20
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#interface FastEthernet0/4
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#switchport access vlan 20
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#interface FastEthernet0/5
+Mon Sep 22 12:53:12 2025   ACC1   ACC1-TOAN(config-if)#switchport mode trunk
+Mon Sep 22 12:53:14 2025   ACC1   ACC1-TOAN(config-if)#end
+Mon Sep 22 12:53:18 2025   ACC1   ACC1-TOAN#wr
+Mon Sep 22 12:54:00 2025   ACC2   Switch>en
+Mon Sep 22 12:54:01 2025   ACC2   Switch#enable
+Mon Sep 22 12:54:01 2025   ACC2   Switch#configure terminal
+Mon Sep 22 12:54:01 2025   ACC2   Switch(config)#hostname ACC2-TOAN
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config)#vlan 30
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-vlan)#name KINHDOANH
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-vlan)#vlan 40
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-vlan)#name KETOAN
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-vlan)#interface FastEthernet0/1
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#switchport access vlan 30
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#interface FastEthernet0/2
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#switchport access vlan 30
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#interface FastEthernet0/3
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#switchport access vlan 40
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#interface FastEthernet0/4
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#switchport access vlan 40
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#interface FastEthernet0/5
+Mon Sep 22 12:54:01 2025   ACC2   ACC2-TOAN(config-if)#switchport mode trunk
+Mon Sep 22 12:54:03 2025   ACC2   ACC2-TOAN(config-if)#end
+Mon Sep 22 12:54:51 2025   ACC3   Switch>enable
+Mon Sep 22 12:54:51 2025   ACC3   Switch#configure terminal
+Mon Sep 22 12:54:51 2025   ACC3   Switch(config)#hostname ACC3-TOAN
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config)#vlan 50
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-vlan)#name PHONGIT
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-vlan)#vlan 60
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-vlan)#name SERVER
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-vlan)#interface FastEthernet0/1
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#switchport access vlan 50
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#interface FastEthernet0/2
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#switchport access vlan 50
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#interface FastEthernet0/3
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#switchport access vlan 60
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#interface FastEthernet0/4
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#switchport access vlan 60
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#interface FastEthernet0/5
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#switchport mode access
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#switchport access vlan 60
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#interface FastEthernet0/6
+Mon Sep 22 12:54:51 2025   ACC3   ACC3-TOAN(config-if)#switchport mode trunk
+Mon Sep 22 12:54:52 2025   ACC3   ACC3-TOAN(config-if)#end
+Mon Sep 22 12:58:04 2025   CORW-SW-TOAN   Switch>en
+Mon Sep 22 12:58:06 2025   CORW-SW-TOAN   Switch#conf t
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config)#enable
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config)#configure terminal
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config)#ip routing
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config)#interface Vlan10
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#ip address 172.24.10.1 255.255.255.0
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#no shutdown
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#interface Vlan20
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#ip address 172.24.20.1 255.255.255.0
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#no shutdown
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#interface Vlan30
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#ip address 172.24.30.1 255.255.255.0
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#no shutdown
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#interface Vlan40
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#ip address 172.24.40.1 255.255.255.0
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#no shutdown
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#interface Vlan50
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#ip address 172.24.50.1 255.255.255.0
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#no shutdown
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#interface Vlan60
+Mon Sep 22 12:58:07 2025   CORW-SW-TOAN   Switch(config-if)#ip address 172.24.60.1 255.255.255.0
+Mon Sep 22 12:58:11 2025   CORW-SW-TOAN   Switch(config-if)#no shutdown
+Mon Sep 22 12:58:36 2025   CORW-SW-TOAN   Switch(config-if)#inter g0/1
+Mon Sep 22 12:58:48 2025   CORW-SW-TOAN   Switch(config-if)#no sw
+Mon Sep 22 12:59:07 2025   CORW-SW-TOAN   Switch(config-if)#ip address 172.24.1.1 255.255.255.252
+Mon Sep 22 12:59:07 2025   CORW-SW-TOAN   Switch(config-if)#no shutdown
+Mon Sep 22 12:59:08 2025   CORW-SW-TOAN   Switch(config-if)#end
+Mon Sep 22 13:34:42 2025   CORW-SW-TOAN   Switch>en
+Mon Sep 22 13:34:43 2025   CORW-SW-TOAN   Switch#conf t
+Mon Sep 22 13:34:45 2025   CORW-SW-TOAN   Switch(config)#interface g0/1
+Mon Sep 22 13:34:51 2025   CORW-SW-TOAN   Switch(config-if)#no switchport
+Mon Sep 22 13:35:14 2025   CORW-SW-TOAN   Switch(config-if)#hostname CORW-SW-TOAN
+Mon Sep 22 13:37:55 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface range FastEthernet0/1 - 3
+Mon Sep 22 13:38:04 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if-range)#switchport mode trunk
+Mon Sep 22 13:38:28 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if-range)#in fa0/1 
+Mon Sep 22 13:38:31 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#sw mode trun
+Mon Sep 22 13:40:02 2025   ACC3   ACC3-TOAN>en
+Mon Sep 22 13:40:04 2025   ACC3   ACC3-TOAN#sho vlan brief
+Mon Sep 22 14:05:01 2025   R-WAN-TOAN   Router>en
+Mon Sep 22 14:05:05 2025   R-WAN-TOAN   Router#conf t
+Mon Sep 22 14:05:09 2025   R-WAN-TOAN   Router(config)#ip routiing
+Mon Sep 22 14:05:12 2025   R-WAN-TOAN   Router(config)#ip routing
+Mon Sep 22 14:10:07 2025   CORW-SW-TOAN   CORW-SW-TOAN>en
+Mon Sep 22 14:10:09 2025   CORW-SW-TOAN   CORW-SW-TOAN#conf t
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface Vlan10
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip address 172.24.10.1 255.255.255.0
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip helper-address 172.24.60.3
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no shutdown
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface Vlan20
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip address 172.24.20.1 255.255.255.0
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip helper-address 172.24.60.3
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no shutdown
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface Vlan30
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip address 172.24.30.1 255.255.255.0
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip helper-address 172.24.60.3
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no shutdown
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface Vlan40
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip address 172.24.40.1 255.255.255.0
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip helper-address 172.24.60.3
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no shutdown
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface Vlan50
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip address 172.24.50.1 255.255.255.0
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip helper-address 172.24.60.3
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no shutdown
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface Vlan60
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip address 172.24.60.1 255.255.255.0
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no shutdown
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface FastEthernet0/3
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no switchport
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip address 172.24.1.1 255.255.255.252
+Mon Sep 22 14:10:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no shutdown
+Mon Sep 22 14:10:14 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 14:11:17 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#inte fa0/1
+Mon Sep 22 14:11:26 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#switchport mode trunk 
+Mon Sep 22 14:11:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#interface FastEthernet0/1
+Mon Sep 22 14:11:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#switchport trunk encapsulation dot1q
+Mon Sep 22 14:11:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#switchport mode trunk
+Mon Sep 22 14:12:03 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 14:12:05 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface FastEthernet0/2
+Mon Sep 22 14:12:05 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#switchport trunk encapsulation dot1q
+Mon Sep 22 14:12:05 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#switchport mode trunk
+Mon Sep 22 14:12:08 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 14:12:12 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface FastEthernet0/3
+Mon Sep 22 14:12:15 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#switchport trunk encapsulation dot1q
+Mon Sep 22 14:16:36 2025   ACC3   ACC3-TOAN>en
+Mon Sep 22 14:16:37 2025   ACC3   ACC3-TOAN#sho run
+Mon Sep 22 14:16:48 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#switchport trunk encapsulation dot1q
+Mon Sep 22 14:16:50 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#do sho un
+Mon Sep 22 14:16:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#do sho run
+Mon Sep 22 14:19:11 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#configure terminal
+Mon Sep 22 14:19:11 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#interface FastEthernet0/3
+Mon Sep 22 14:19:14 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#default
+Mon Sep 22 14:19:28 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#sw mode trunk
+Mon Sep 22 14:20:16 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#default interface fastEthernet0/3
+Mon Sep 22 14:21:46 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#inter fa0/3
+Mon Sep 22 14:22:20 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#switchport encapsulation dot1q
+Mon Sep 22 14:22:29 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#switchport tru encapsulation dot1q
+Mon Sep 22 14:22:39 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#inter fa0/3
+Mon Sep 22 14:22:51 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#switchport trunk encapsulation dot1q
+Mon Sep 22 14:22:59 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#do sho run
+Mon Sep 22 14:23:41 2025   CORW-SW-TOAN   CORW-SW-TOAN#no inter fa0/3
+Mon Sep 22 14:23:50 2025   CORW-SW-TOAN   CORW-SW-TOAN#configure terminal
+Mon Sep 22 14:23:50 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface FastEthernet0/3
+Mon Sep 22 14:23:52 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#shutdown
+Mon Sep 22 14:23:53 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no shutdown
+Mon Sep 22 14:24:08 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#do sho run
+Mon Sep 22 14:24:25 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#inter fa0/3
+Mon Sep 22 14:24:27 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#sw
+Mon Sep 22 14:24:31 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#do sho run
+Mon Sep 22 14:24:40 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#switchport trunk encapsulation dot1q
+Mon Sep 22 14:24:41 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#switchport mode trunk
+Mon Sep 22 14:31:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#enable
+Mon Sep 22 14:31:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#configure terminal
+Mon Sep 22 14:31:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#router eigrp 100
+Mon Sep 22 14:31:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-router)#network 172.24.1.0 0.0.0.3
+Mon Sep 22 14:31:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-router)#network 172.24.10.0 0.0.0.255
+Mon Sep 22 14:31:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-router)#network 172.24.20.0 0.0.0.255
+Mon Sep 22 14:31:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-router)#network 172.24.30.0 0.0.0.255
+Mon Sep 22 14:31:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-router)#network 172.24.40.0 0.0.0.255
+Mon Sep 22 14:31:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-router)#network 172.24.50.0 0.0.0.255
+Mon Sep 22 14:31:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-router)#network 172.24.60.0 0.0.0.255
+Mon Sep 22 14:31:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-router)#no auto-summary
+Mon Sep 22 14:31:54 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-router)#exit
+Mon Sep 22 14:31:55 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#end
+Mon Sep 22 14:33:18 2025   R-WAN-TOAN   Router>enable
+Mon Sep 22 14:33:18 2025   R-WAN-TOAN   Router#configure terminal
+Mon Sep 22 14:33:19 2025   R-WAN-TOAN   Router(config)#hostname R-WAN-TOAN
+Mon Sep 22 14:35:06 2025   CORW-SW-TOAN   CORW-SW-TOAN#do sho run
+Mon Sep 22 14:35:09 2025   CORW-SW-TOAN   CORW-SW-TOAN#sho run
+Mon Sep 22 14:46:25 2025   R-WAN-TOAN   R-WAN-TOAN>en
+Mon Sep 22 14:46:28 2025   R-WAN-TOAN   R-WAN-TOAN#conf t
+Mon Sep 22 14:52:16 2025   R-WAN-TOAN   R-WAN-TOAN(config)#interface GigabitEthernet0/0
+Mon Sep 22 14:52:16 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#ip address 172.24.1.2 255.255.255.252
+Mon Sep 22 14:52:16 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#no shutdown
+Mon Sep 22 14:52:18 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#exit
+Mon Sep 22 14:52:40 2025   R-WAN-TOAN   R-WAN-TOAN(config)#interface GigabitEthernet0/1
+Mon Sep 22 14:52:40 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#ip address 11.4.0.1 255.255.255.252
+Mon Sep 22 14:52:40 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#no shutdown
+Mon Sep 22 14:52:41 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#exit
+Mon Sep 22 14:52:50 2025   R-WAN-TOAN   R-WAN-TOAN(config)#ip route 0.0.0.0 0.0.0.0 11.4.0.2
+Mon Sep 22 14:53:11 2025   R-WAN-TOAN   R-WAN-TOAN(config)#router eigrp 100
+Mon Sep 22 14:53:11 2025   R-WAN-TOAN   R-WAN-TOAN(config-router)#network 172.24.1.0 0.0.0.3
+Mon Sep 22 14:53:11 2025   R-WAN-TOAN   R-WAN-TOAN(config-router)#network 11.4.0.0 0.0.0.3
+Mon Sep 22 14:53:11 2025   R-WAN-TOAN   R-WAN-TOAN(config-router)#redistribute static
+Mon Sep 22 14:53:11 2025   R-WAN-TOAN   R-WAN-TOAN(config-router)#no auto-summary
+Mon Sep 22 14:53:12 2025   R-WAN-TOAN   R-WAN-TOAN(config-router)#exit
+Mon Sep 22 14:55:51 2025   CORW-SW-TOAN   CORW-SW-TOAN>en
+Mon Sep 22 14:56:12 2025   CORW-SW-TOAN   CORW-SW-TOAN#sho ip ei nei
+Mon Sep 22 14:56:28 2025   R-WAN-TOAN   R-WAN-TOAN(config)#sho ip ei nei
+Mon Sep 22 14:56:33 2025   R-WAN-TOAN   R-WAN-TOAN(config)#do sho ip ei nei
+Mon Sep 22 14:57:10 2025   R-WAN-TOAN   R-WAN-TOAN(config)#show ip route eigrp
+Mon Sep 22 14:57:16 2025   R-WAN-TOAN   R-WAN-TOAN(config)#do show ip route eigrp
+Mon Sep 22 14:57:35 2025   CORW-SW-TOAN   CORW-SW-TOAN#show ip route eigrp
+Mon Sep 22 14:58:48 2025   R-WAN-TOAN   R-WAN-TOAN(config)#show running-config | section eigrp
+Mon Sep 22 14:58:56 2025   R-WAN-TOAN   R-WAN-TOAN(config)#do show running-config | section eigrp
+Mon Sep 22 15:01:53 2025   CORW-SW-TOAN   CORW-SW-TOAN#conf t
+Mon Sep 22 15:02:07 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 101 deny ip 172.24.20.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:02:07 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 101 deny ip 172.24.30.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:02:07 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 101 deny ip 172.24.40.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:02:07 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 101 permit ip any any
+Mon Sep 22 15:02:08 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#exit
+Mon Sep 22 15:02:19 2025   CORW-SW-TOAN   CORW-SW-TOAN#interface Vlan10
+Mon Sep 22 15:02:19 2025   CORW-SW-TOAN   CORW-SW-TOAN#ip access-group 101 in
+Mon Sep 22 15:02:19 2025   CORW-SW-TOAN   CORW-SW-TOAN#exit
+Mon Sep 22 15:02:39 2025   CORW-SW-TOAN   CORW-SW-TOAN>en
+Mon Sep 22 15:02:40 2025   CORW-SW-TOAN   CORW-SW-TOAN#conf t
+Mon Sep 22 15:02:42 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface Vlan10
+Mon Sep 22 15:02:42 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:02:42 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 15:02:42 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#end
+Mon Sep 22 15:02:43 2025   CORW-SW-TOAN   CORW-SW-TOAN#write memory
+Mon Sep 22 15:03:41 2025   CORW-SW-TOAN   CORW-SW-TOAN#show access-lists 101
+Mon Sep 22 15:04:20 2025   CORW-SW-TOAN   CORW-SW-TOAN#sho run
+Mon Sep 22 15:05:30 2025   CORW-SW-TOAN   CORW-SW-TOAN#show ip interface Vlan10 | include access list
+Mon Sep 22 15:06:05 2025   CORW-SW-TOAN   CORW-SW-TOAN#enable
+Mon Sep 22 15:06:05 2025   CORW-SW-TOAN   CORW-SW-TOAN#configure terminal
+Mon Sep 22 15:06:05 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface Vlan10
+Mon Sep 22 15:06:05 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:06:05 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 15:06:05 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#end
+Mon Sep 22 15:06:10 2025   CORW-SW-TOAN   CORW-SW-TOAN#write memory
+Mon Sep 22 15:06:18 2025   CORW-SW-TOAN   CORW-SW-TOAN#show ip interface Vlan10 | include access list
+Mon Sep 22 15:06:33 2025   CORW-SW-TOAN   CORW-SW-TOAN#show access-lists 101
+Mon Sep 22 15:06:44 2025   CORW-SW-TOAN   CORW-SW-TOAN#enable
+Mon Sep 22 15:06:44 2025   CORW-SW-TOAN   CORW-SW-TOAN#configure terminal
+Mon Sep 22 15:06:44 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 101 deny ip 172.24.20.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:06:44 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 101 deny ip 172.24.30.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:06:44 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 101 deny ip 172.24.40.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:06:44 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 101 permit ip any any
+Mon Sep 22 15:06:44 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface Vlan10
+Mon Sep 22 15:06:44 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:06:44 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 15:06:44 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#end
+Mon Sep 22 15:06:45 2025   CORW-SW-TOAN   CORW-SW-TOAN#write memory
+Mon Sep 22 15:06:58 2025   CORW-SW-TOAN   CORW-SW-TOAN#show ip interface Vlan10 | include access list
+Mon Sep 22 15:07:41 2025   CORW-SW-TOAN   CORW-SW-TOAN#show run interface Vlan10 | include access-group
+Mon Sep 22 15:08:24 2025   CORW-SW-TOAN   CORW-SW-TOAN#interface Vlan10
+Mon Sep 22 15:08:24 2025   CORW-SW-TOAN   CORW-SW-TOAN#no ip access-group 101 in
+Mon Sep 22 15:08:24 2025   CORW-SW-TOAN   CORW-SW-TOAN#ip access-group 101 in
+Mon Sep 22 15:08:27 2025   CORW-SW-TOAN   CORW-SW-TOAN#exit
+Mon Sep 22 15:08:28 2025   CORW-SW-TOAN   CORW-SW-TOAN>en
+Mon Sep 22 15:08:30 2025   CORW-SW-TOAN   CORW-SW-TOAN#conf t
+Mon Sep 22 15:08:31 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#interface Vlan10
+Mon Sep 22 15:08:31 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no ip access-group 101 in
+Mon Sep 22 15:08:31 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:08:32 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#exit
+Mon Sep 22 15:09:10 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#show ip interface brief | include Vlan10
+Mon Sep 22 15:09:15 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#do show ip interface brief | include Vlan10
+Mon Sep 22 15:10:06 2025   ACC1   ACC1-TOAN>enable
+Mon Sep 22 15:10:06 2025   ACC1   ACC1-TOAN#configure terminal
+Mon Sep 22 15:10:06 2025   ACC1   ACC1-TOAN(config)#access-list 101 deny ip 172.24.20.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:10:06 2025   ACC1   ACC1-TOAN(config)#access-list 101 deny ip 172.24.30.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:10:06 2025   ACC1   ACC1-TOAN(config)#access-list 101 deny ip 172.24.40.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:10:06 2025   ACC1   ACC1-TOAN(config)#access-list 101 permit ip any any
+Mon Sep 22 15:10:06 2025   ACC1   ACC1-TOAN(config)#interface Vlan10
+Mon Sep 22 15:10:06 2025   ACC1   ACC1-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:10:06 2025   ACC1   ACC1-TOAN(config-if)#exit
+Mon Sep 22 15:10:06 2025   ACC1   ACC1-TOAN(config)#end
+Mon Sep 22 15:10:18 2025   ACC1   ACC1-TOAN#write memory
+Mon Sep 22 15:10:56 2025   ACC1   ACC1-TOAN#conf t
+Mon Sep 22 15:11:01 2025   ACC1   ACC1-TOAN(config)#no access-list 101
+Mon Sep 22 15:11:04 2025   ACC1   ACC1-TOAN(config)#sho run
+Mon Sep 22 15:11:07 2025   ACC1   ACC1-TOAN(config)#do sho run
+Mon Sep 22 15:11:17 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#do sho run
+Mon Sep 22 15:19:07 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#ip access-group 101 in
+Mon Sep 22 15:19:30 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#inter Fa0/1
+Mon Sep 22 15:19:35 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:20:11 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#do sho run
+Mon Sep 22 15:23:48 2025   ACC1   ACC1-TOAN>en
+Mon Sep 22 15:23:49 2025   ACC1   ACC1-TOAN#conf t
+Mon Sep 22 15:23:51 2025   ACC1   ACC1-TOAN(config)#interface Vlan20
+Mon Sep 22 15:23:51 2025   ACC1   ACC1-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:23:51 2025   ACC1   ACC1-TOAN(config-if)#interface Vlan30
+Mon Sep 22 15:23:51 2025   ACC1   ACC1-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:23:51 2025   ACC1   ACC1-TOAN(config-if)#interface Vlan40
+Mon Sep 22 15:23:51 2025   ACC1   ACC1-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:24:04 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#interface Vlan20
+Mon Sep 22 15:24:04 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:24:04 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#interface Vlan30
+Mon Sep 22 15:24:04 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:24:04 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#interface Vlan40
+Mon Sep 22 15:24:04 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:24:42 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#do sho run
+Mon Sep 22 15:27:55 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#interface Vlan20
+Mon Sep 22 15:28:15 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no ip access-group 101 in
+Mon Sep 22 15:28:20 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#interface Vlan30
+Mon Sep 22 15:28:23 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group 101 in
+Mon Sep 22 15:28:27 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#interface Vlan40
+Mon Sep 22 15:28:31 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no ip access-group 101 in
+Mon Sep 22 15:28:33 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#interface Vlan30
+Mon Sep 22 15:28:35 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no ip access-group 101 in
+Mon Sep 22 15:28:40 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-list extended BLOCK_TO_GD
+Mon Sep 22 15:28:40 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-ext-nacl)#deny ip 172.24.20.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:28:40 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-ext-nacl)#deny ip 172.24.30.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:28:40 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-ext-nacl)#deny ip 172.24.40.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:28:40 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-ext-nacl)#permit ip any any
+Mon Sep 22 15:28:40 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-ext-nacl)#interface Vlan20
+Mon Sep 22 15:28:40 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group BLOCK_TO_GD in
+Mon Sep 22 15:28:40 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#interface Vlan30
+Mon Sep 22 15:28:40 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group BLOCK_TO_GD in
+Mon Sep 22 15:28:40 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#interface Vlan40
+Mon Sep 22 15:28:40 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group BLOCK_TO_GD in
+Mon Sep 22 15:30:45 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no ip access-group BLOCK_TO_GD in
+Mon Sep 22 15:30:53 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no access-list
+Mon Sep 22 15:30:56 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#no access-list 101
+Mon Sep 22 15:31:00 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#do sho run
+Mon Sep 22 15:31:16 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#no ip access-list extended BLOCK_TO_GD
+Mon Sep 22 15:31:19 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#do sho run
+Mon Sep 22 15:31:39 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#ip access-list extended BLOCK_TO_GD
+Mon Sep 22 15:31:39 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-ext-nacl)#deny ip 172.24.20.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:31:39 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-ext-nacl)#deny ip 172.24.30.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:31:39 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-ext-nacl)#deny ip 172.24.40.0 0.0.0.255 172.24.10.0 0.0.0.255
+Mon Sep 22 15:31:39 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-ext-nacl)#permit ip any any
+Mon Sep 22 15:31:39 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-ext-nacl)#interface Vlan10
+Mon Sep 22 15:31:39 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-if)#ip access-group BLOCK_TO_GD in
+Mon Sep 22 15:40:23 2025   R-WAN-TOAN   R-WAN-TOAN>en
+Mon Sep 22 15:40:24 2025   R-WAN-TOAN   R-WAN-TOAN#sho run
+Mon Sep 22 15:44:21 2025   R-WAN-TOAN   R-WAN-TOAN#access-list 110 permit ip 172.24.0.0 0.0.255.255 any
+Mon Sep 22 15:44:24 2025   R-WAN-TOAN   R-WAN-TOAN#exitcn t
+Mon Sep 22 15:44:27 2025   R-WAN-TOAN   R-WAN-TOAN#cn t
+Mon Sep 22 15:44:30 2025   R-WAN-TOAN   R-WAN-TOAN#conf t
+Mon Sep 22 15:44:31 2025   R-WAN-TOAN   R-WAN-TOAN(config)#access-list 110 permit ip 172.24.0.0 0.0.255.255 any
+Mon Sep 22 15:44:32 2025   R-WAN-TOAN   R-WAN-TOAN(config)#exit
+Mon Sep 22 15:45:05 2025   R-WAN-TOAN   R-WAN-TOAN#conf t
+Mon Sep 22 15:45:07 2025   R-WAN-TOAN   R-WAN-TOAN(config)#ip nat inside source list 110 interface GigabitEthernet0/1 overload
+Mon Sep 22 15:45:15 2025   R-WAN-TOAN   R-WAN-TOAN(config)#interface GigabitEthernet0/0
+Mon Sep 22 15:45:15 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#ip nat inside
+Mon Sep 22 15:45:21 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#interface GigabitEthernet0/1
+Mon Sep 22 15:45:24 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#ip nat outsideend
+Mon Sep 22 15:45:35 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#ip nat outsid
+Mon Sep 22 15:45:37 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#end
+Mon Sep 22 15:45:38 2025   R-WAN-TOAN   R-WAN-TOAN#write memory
+Mon Sep 22 15:46:13 2025   R-WAN-TOAN   R-WAN-TOAN#show run | include nat
+Mon Sep 22 15:46:28 2025   R-WAN-TOAN   R-WAN-TOAN#show access-lists 110
+Mon Sep 22 15:47:05 2025   R-WAN-TOAN   R-WAN-TOAN#ping 8.8.8.8
+Mon Sep 22 15:57:09 2025   R-WAN-TOAN   R-WAN-TOAN#ip access-list extended BLOCK_WEB_KETOAN
+Mon Sep 22 15:57:09 2025   R-WAN-TOAN   R-WAN-TOAN#deny tcp 172.24.40.0 0.0.0.255 any eq 80
+Mon Sep 22 15:57:09 2025   R-WAN-TOAN   R-WAN-TOAN#deny tcp 172.24.40.0 0.0.0.255 any eq 443
+Mon Sep 22 15:57:09 2025   R-WAN-TOAN   R-WAN-TOAN#permit ip any any
+Mon Sep 22 15:57:11 2025   R-WAN-TOAN   R-WAN-TOAN#conf t
+Mon Sep 22 15:57:13 2025   R-WAN-TOAN   R-WAN-TOAN(config)#ip access-list extended BLOCK_WEB_KETOAN
+Mon Sep 22 15:57:13 2025   R-WAN-TOAN   R-WAN-TOAN(config-ext-nacl)#deny tcp 172.24.40.0 0.0.0.255 any eq 80
+Mon Sep 22 15:57:13 2025   R-WAN-TOAN   R-WAN-TOAN(config-ext-nacl)#deny tcp 172.24.40.0 0.0.0.255 any eq 443
+Mon Sep 22 15:57:13 2025   R-WAN-TOAN   R-WAN-TOAN(config-ext-nacl)#permit ip any any
+Mon Sep 22 15:57:49 2025   R-WAN-TOAN   R-WAN-TOAN(config-ext-nacl)#interface GigabitEthernet0/0
+Mon Sep 22 15:57:49 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#ip access-group BLOCK_WEB_KETOAN in
+Mon Sep 22 16:01:10 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#ip nat inside source static tcp 172.24.60.4 80 interface GigabitEthernet0/1 80
+Mon Sep 22 16:01:18 2025   R-WAN-TOAN   R-WAN-TOAN(config-if)#exit
+Mon Sep 22 16:01:20 2025   R-WAN-TOAN   R-WAN-TOAN(config)#ip nat inside source static tcp 172.24.60.4 80 interface GigabitEthernet0/1 80
+Mon Sep 22 16:02:40 2025   R-WAN-TOAN   R-WAN-TOAN(config)#ip nat inside source static tcp 172.24.60.4 80 11.4.0.1 80
+Mon Sep 22 16:02:48 2025   R-WAN-TOAN   R-WAN-TOAN(config)#ip nat inside source static tcp 172.24.60.4 443 11.4.0.1 443
+Mon Sep 22 16:02:48 2025   R-WAN-TOAN   R-WAN-TOAN(config)#exit
+Mon Sep 22 16:02:48 2025   R-WAN-TOAN   R-WAN-TOAN#end
+Mon Sep 22 16:02:59 2025   R-WAN-TOAN   R-WAN-TOAN#wr
+Mon Sep 22 16:03:15 2025   R-WAN-TOAN   R-WAN-TOAN#show run | include nat.*static
+Mon Sep 22 16:03:32 2025   R-WAN-TOAN   R-WAN-TOAN#show ip nat translations | include 172.24.60.4
+Mon Sep 22 16:04:51 2025   R1-ISP-TOAN   Router>en
+Mon Sep 22 16:05:18 2025   R-WAN-TOAN   R-WAN-TOAN#do sho run
+Mon Sep 22 16:19:37 2025   CORW-SW-TOAN   CORW-SW-TOAN>en
+Mon Sep 22 16:19:39 2025   CORW-SW-TOAN   CORW-SW-TOAN#conf t
+Mon Sep 22 16:19:46 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#enable password abc
+Mon Sep 22 16:19:55 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#line vty 0 4
+Mon Sep 22 16:19:55 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-line)#password 123
+Mon Sep 22 16:19:57 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-line)#login
+Mon Sep 22 16:20:02 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-line)#line vty 0 15
+Mon Sep 22 16:20:08 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-line)#transport input telnetexit
+Mon Sep 22 16:20:08 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-line)#end
+Mon Sep 22 16:20:09 2025   CORW-SW-TOAN   CORW-SW-TOAN#write memory
+Mon Sep 22 16:20:43 2025   ACC1   ACC1-TOAN>en
+Mon Sep 22 16:20:45 2025   ACC1   ACC1-TOAN#conf t
+Mon Sep 22 16:20:47 2025   ACC1   ACC1-TOAN(config)#enable password abc
+Mon Sep 22 16:20:53 2025   ACC1   ACC1-TOAN(config)#line vty 0 4
+Mon Sep 22 16:20:53 2025   ACC1   ACC1-TOAN(config-line)#password 123
+Mon Sep 22 16:20:54 2025   ACC1   ACC1-TOAN(config-line)#login
+Mon Sep 22 16:21:00 2025   ACC1   ACC1-TOAN(config-line)#line vty 0 15
+Mon Sep 22 16:21:00 2025   ACC1   ACC1-TOAN(config-line)#transport input telnet
+Mon Sep 22 16:21:00 2025   ACC1   ACC1-TOAN(config-line)#exit
+Mon Sep 22 16:21:00 2025   ACC1   ACC1-TOAN(config)#end
+Mon Sep 22 16:21:01 2025   ACC1   ACC1-TOAN#write memory
+Mon Sep 22 16:21:13 2025   ACC2   ACC2-TOAN>en
+Mon Sep 22 16:21:15 2025   ACC2   ACC2-TOAN#conf t
+Mon Sep 22 16:21:17 2025   ACC2   ACC2-TOAN(config)#enable password abc
+Mon Sep 22 16:21:28 2025   ACC2   ACC2-TOAN(config)#line vty 0 4
+Mon Sep 22 16:21:28 2025   ACC2   ACC2-TOAN(config-line)#password 123
+Mon Sep 22 16:21:28 2025   ACC2   ACC2-TOAN(config-line)#login
+Mon Sep 22 16:21:28 2025   ACC2   ACC2-TOAN(config-line)#exit
+Mon Sep 22 16:21:28 2025   ACC2   ACC2-TOAN(config)#line vty 0 15
+Mon Sep 22 16:21:28 2025   ACC2   ACC2-TOAN(config-line)#transport input telnet
+Mon Sep 22 16:21:28 2025   ACC2   ACC2-TOAN(config-line)#exit
+Mon Sep 22 16:21:28 2025   ACC2   ACC2-TOAN(config)#end
+Mon Sep 22 16:21:29 2025   ACC2   ACC2-TOAN#write memory
+Mon Sep 22 16:21:42 2025   ACC3   ACC3-TOAN>en
+Mon Sep 22 16:21:43 2025   ACC3   ACC3-TOAN#conf t
+Mon Sep 22 16:21:44 2025   ACC3   ACC3-TOAN(config)#enable
+Mon Sep 22 16:21:44 2025   ACC3   ACC3-TOAN(config)#configure terminal
+Mon Sep 22 16:21:44 2025   ACC3   ACC3-TOAN(config)#hostname ACC3-TOAN
+Mon Sep 22 16:21:44 2025   ACC3   ACC3-TOAN(config)#enable password abc
+Mon Sep 22 16:21:44 2025   ACC3   ACC3-TOAN(config)#line vty 0 4
+Mon Sep 22 16:21:44 2025   ACC3   ACC3-TOAN(config-line)#password 123
+Mon Sep 22 16:21:44 2025   ACC3   ACC3-TOAN(config-line)#login
+Mon Sep 22 16:21:44 2025   ACC3   ACC3-TOAN(config-line)#exit
+Mon Sep 22 16:21:44 2025   ACC3   ACC3-TOAN(config)#line vty 0 15
+Mon Sep 22 16:21:44 2025   ACC3   ACC3-TOAN(config-line)#transport input telnet
+Mon Sep 22 16:21:44 2025   ACC3   ACC3-TOAN(config-line)#exit
+Mon Sep 22 16:21:44 2025   ACC3   ACC3-TOAN(config)#end
+Mon Sep 22 16:21:45 2025   ACC3   ACC3-TOAN#write memory
+Mon Sep 22 16:25:14 2025   ACC1   ACC1-TOAN#sho run
+Mon Sep 22 16:26:53 2025   CORW-SW-TOAN   CORW-SW-TOAN#telnet 172.23.10.3
+Mon Sep 22 16:27:07 2025   CORW-SW-TOAN   CORW-SW-TOAN#telnet 172.24.10.3
+Mon Sep 22 16:27:12 2025   CORW-SW-TOAN   CORW-SW-TOAN#telnet 172.24.10.3
+Mon Sep 22 16:27:47 2025   CORW-SW-TOAN   CORW-SW-TOAN#telnet 172.24.20.3
+Mon Sep 22 16:29:48 2025   CORW-SW-TOAN   CORW-SW-TOAN#show ip interface brief | include 172.24.10
+Mon Sep 22 16:32:11 2025   CORW-SW-TOAN   CORW-SW-TOAN>en
+Mon Sep 22 16:45:27 2025   R-WAN-TOAN   R-WAN-TOAN>en
+Mon Sep 22 16:45:29 2025   R-WAN-TOAN   R-WAN-TOAN#cofn t
+Mon Sep 22 16:45:32 2025   R-WAN-TOAN   R-WAN-TOAN#conf t
+Mon Sep 22 16:45:40 2025   R-WAN-TOAN   R-WAN-TOAN(config)#ip domain-name Cty04.com
+Mon Sep 22 16:46:12 2025   R-WAN-TOAN   R-WAN-TOAN(config)#crypto key generate rsa
+Mon Sep 22 16:46:26 2025   R-WAN-TOAN   R-WAN-TOAN(config)#username admin privilege 15 secret admin
+Mon Sep 22 16:47:19 2025   R-WAN-TOAN   R-WAN-TOAN(config)#line vty 0 4
+Mon Sep 22 16:47:19 2025   R-WAN-TOAN   R-WAN-TOAN(config-line)#transport input ssh
+Mon Sep 22 16:47:19 2025   R-WAN-TOAN   R-WAN-TOAN(config-line)#login local
+Mon Sep 22 16:47:20 2025   R-WAN-TOAN   R-WAN-TOAN(config-line)#exit
+Mon Sep 22 16:47:26 2025   R-WAN-TOAN   R-WAN-TOAN(config)#enable password abc
+Mon Sep 22 16:47:26 2025   R-WAN-TOAN   R-WAN-TOAN(config)#exit
+Mon Sep 22 16:47:26 2025   R-WAN-TOAN   R-WAN-TOAN#end
+Mon Sep 22 16:48:18 2025   R-WAN-TOAN   R-WAN-TOAN#show run | include ssh
+Mon Sep 22 16:48:35 2025   R-WAN-TOAN   R-WAN-TOAN#show ip ssh
+Mon Sep 22 16:48:46 2025   R-WAN-TOAN   R-WAN-TOAN#show crypto key mypubkey rsa
+Mon Sep 22 16:50:03 2025   R-WAN-TOAN   R-WAN-TOAN#show run | include ssh
+Mon Sep 22 16:50:16 2025   R-WAN-TOAN   R-WAN-TOAN#show ip ssh
+Mon Sep 22 16:50:23 2025   R-WAN-TOAN   R-WAN-TOAN#show crypto key mypubkey rsa
+Mon Sep 22 16:53:26 2025   CORW-SW-TOAN   CORW-SW-TOAN>en
+Mon Sep 22 16:53:37 2025   CORW-SW-TOAN   CORW-SW-TOAN#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq telnet
+Mon Sep 22 16:53:37 2025   CORW-SW-TOAN   CORW-SW-TOAN#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq 22
+Mon Sep 22 16:53:37 2025   CORW-SW-TOAN   CORW-SW-TOAN#access-list 130 deny tcp any any eq telnet
+Mon Sep 22 16:53:37 2025   CORW-SW-TOAN   CORW-SW-TOAN#access-list 130 deny tcp any any eq 22
+Mon Sep 22 16:53:48 2025   CORW-SW-TOAN   CORW-SW-TOAN#conf t
+Mon Sep 22 16:53:50 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq telnet
+Mon Sep 22 16:53:50 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq 22
+Mon Sep 22 16:53:50 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 130 deny tcp any any eq telnet
+Mon Sep 22 16:53:50 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 130 deny tcp any any eq 22
+Mon Sep 22 16:53:51 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#access-list 130 permit ip any any
+Mon Sep 22 16:53:57 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#line vty 0 15
+Mon Sep 22 16:53:57 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-line)#access-class 130 in
+Mon Sep 22 16:53:57 2025   CORW-SW-TOAN   CORW-SW-TOAN(config-line)#exit
+Mon Sep 22 16:53:57 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#end
+Mon Sep 22 16:53:59 2025   CORW-SW-TOAN   CORW-SW-TOAN#write memory
+Mon Sep 22 16:54:18 2025   ACC1   ACC1-TOAN>en
+Mon Sep 22 16:54:22 2025   ACC1   ACC1-TOAN#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq telnet
+Mon Sep 22 16:54:22 2025   ACC1   ACC1-TOAN#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq 22
+Mon Sep 22 16:54:22 2025   ACC1   ACC1-TOAN#access-list 130 deny tcp any any eq telnet
+Mon Sep 22 16:54:22 2025   ACC1   ACC1-TOAN#access-list 130 deny tcp any any eq 22
+Mon Sep 22 16:54:28 2025   ACC1   ACC1-TOAN#conf t
+Mon Sep 22 16:54:29 2025   ACC1   ACC1-TOAN(config)#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq telnet
+Mon Sep 22 16:54:29 2025   ACC1   ACC1-TOAN(config)#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq 22
+Mon Sep 22 16:54:29 2025   ACC1   ACC1-TOAN(config)#access-list 130 deny tcp any any eq telnet
+Mon Sep 22 16:54:29 2025   ACC1   ACC1-TOAN(config)#access-list 130 deny tcp any any eq 22
+Mon Sep 22 16:54:30 2025   ACC1   ACC1-TOAN(config)#access-list 130 permit ip any any
+Mon Sep 22 16:54:37 2025   ACC1   ACC1-TOAN(config)#line vty 0 15
+Mon Sep 22 16:54:37 2025   ACC1   ACC1-TOAN(config-line)#access-class 130 in
+Mon Sep 22 16:54:37 2025   ACC1   ACC1-TOAN(config-line)#exit
+Mon Sep 22 16:54:37 2025   ACC1   ACC1-TOAN(config)#end
+Mon Sep 22 16:54:37 2025   ACC1   ACC1-TOAN#write memory
+Mon Sep 22 16:54:45 2025   ACC2   ACC2-TOAN>en
+Mon Sep 22 16:54:50 2025   ACC2   ACC2-TOAN#conf t
+Mon Sep 22 16:54:57 2025   ACC2   ACC2-TOAN(config)#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq telnet
+Mon Sep 22 16:54:57 2025   ACC2   ACC2-TOAN(config)#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq 22
+Mon Sep 22 16:54:57 2025   ACC2   ACC2-TOAN(config)#access-list 130 deny tcp any any eq telnet
+Mon Sep 22 16:54:57 2025   ACC2   ACC2-TOAN(config)#access-list 130 deny tcp any any eq 22
+Mon Sep 22 16:54:58 2025   ACC2   ACC2-TOAN(config)#access-list 130 permit ip any any
+Mon Sep 22 16:55:02 2025   ACC2   ACC2-TOAN(config)#line vty 0 15
+Mon Sep 22 16:55:02 2025   ACC2   ACC2-TOAN(config-line)#access-class 130 in
+Mon Sep 22 16:55:02 2025   ACC2   ACC2-TOAN(config-line)#exit
+Mon Sep 22 16:55:02 2025   ACC2   ACC2-TOAN(config)#end
+Mon Sep 22 16:55:03 2025   ACC2   ACC2-TOAN#write memory
+Mon Sep 22 16:55:10 2025   ACC3   ACC3-TOAN>en
+Mon Sep 22 16:55:13 2025   ACC3   ACC3-TOAN#conf t
+Mon Sep 22 16:55:24 2025   ACC3   ACC3-TOAN(config)#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq telnet
+Mon Sep 22 16:55:24 2025   ACC3   ACC3-TOAN(config)#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq 22
+Mon Sep 22 16:55:24 2025   ACC3   ACC3-TOAN(config)#access-list 130 deny tcp any any eq telnet
+Mon Sep 22 16:55:24 2025   ACC3   ACC3-TOAN(config)#access-list 130 deny tcp any any eq 22
+Mon Sep 22 16:55:24 2025   ACC3   ACC3-TOAN(config)#access-list 130 permit ip any any
+Mon Sep 22 16:55:24 2025   ACC3   ACC3-TOAN(config)#line vty 0 15
+Mon Sep 22 16:55:24 2025   ACC3   ACC3-TOAN(config-line)#access-class 130 in
+Mon Sep 22 16:55:24 2025   ACC3   ACC3-TOAN(config-line)#exit
+Mon Sep 22 16:55:24 2025   ACC3   ACC3-TOAN(config)#end
+Mon Sep 22 16:55:25 2025   ACC3   ACC3-TOAN#write memory
+Mon Sep 22 16:55:49 2025   R-WAN-TOAN   R-WAN-TOAN#conf t
+Mon Sep 22 16:55:51 2025   R-WAN-TOAN   R-WAN-TOAN(config)#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq telnet
+Mon Sep 22 16:55:51 2025   R-WAN-TOAN   R-WAN-TOAN(config)#access-list 130 permit tcp 172.24.50.0 0.0.0.255 any eq 22
+Mon Sep 22 16:55:51 2025   R-WAN-TOAN   R-WAN-TOAN(config)#access-list 130 deny tcp any any eq telnet
+Mon Sep 22 16:55:51 2025   R-WAN-TOAN   R-WAN-TOAN(config)#access-list 130 deny tcp any any eq 22
+Mon Sep 22 16:55:52 2025   R-WAN-TOAN   R-WAN-TOAN(config)#access-list 130 permit ip any any
+Mon Sep 22 16:56:03 2025   R-WAN-TOAN   R-WAN-TOAN(config)#line vty 0 15
+Mon Sep 22 16:56:03 2025   R-WAN-TOAN   R-WAN-TOAN(config-line)#access-class 130 in
+Mon Sep 22 16:56:03 2025   R-WAN-TOAN   R-WAN-TOAN(config-line)#exit
+Mon Sep 22 16:56:03 2025   R-WAN-TOAN   R-WAN-TOAN(config)#end
+Mon Sep 22 16:56:04 2025   R-WAN-TOAN   R-WAN-TOAN#write memory
+Mon Sep 22 16:56:24 2025   CORW-SW-TOAN   CORW-SW-TOAN#show access-lists 130
+Mon Sep 22 16:57:33 2025   CORW-SW-TOAN   CORW-SW-TOAN>en
+Mon Sep 22 17:06:10 2025   CORW-SW-TOAN   CORW-SW-TOAN#enable
+Mon Sep 22 17:06:12 2025   CORW-SW-TOAN   CORW-SW-TOAN#copy running-config tftp
+Mon Sep 22 17:07:13 2025   CORW-SW-TOAN   CORW-SW-TOAN#CORW-SW-TOAN#enable
+Mon Sep 22 17:07:21 2025   CORW-SW-TOAN   CORW-SW-TOAN#copy running-config tftp
+Mon Sep 22 17:08:02 2025   ACC1   ACC1-TOAN>en
+Mon Sep 22 17:08:08 2025   ACC1   ACC1-TOAN#conf t
+Mon Sep 22 17:08:10 2025   ACC1   ACC1-TOAN(config)#enable
+Mon Sep 22 17:08:11 2025   ACC1   ACC1-TOAN(config)#copy running-config tftp
+Mon Sep 22 17:08:18 2025   ACC1   ACC1-TOAN#enable
+Mon Sep 22 17:08:19 2025   ACC1   ACC1-TOAN#copy running-config tftp
+Mon Sep 22 17:09:22 2025   ACC1   ACC1-TOAN#enable
+Mon Sep 22 17:09:26 2025   ACC1   ACC1-TOAN#copy running-config tftp
+Mon Sep 22 17:09:46 2025   ACC3   ACC3-TOAN>en
+Mon Sep 22 17:09:52 2025   ACC3   ACC3-TOAN#enable
+Mon Sep 22 17:09:54 2025   ACC3   ACC3-TOAN#copy running-config tftp
+Mon Sep 22 18:35:01 2025   CORW-SW-TOAN   CORW-SW-TOAN>en
+Mon Sep 22 18:35:07 2025   CORW-SW-TOAN   CORW-SW-TOAN#copy tftp: flash:
+Mon Sep 22 19:10:38 2025   CORW-SW-TOAN   CORW-SW-TOAN>en
+Mon Sep 22 19:10:48 2025   CORW-SW-TOAN   CORW-SW-TOAN#copy tftp: flash:
+Mon Sep 22 19:12:21 2025   CORW-SW-TOAN   CORW-SW-TOAN#copy tftp: flash:
+Mon Sep 22 19:12:39 2025   CORW-SW-TOAN   CORW-SW-TOAN#copy tftp: flash:
+Mon Sep 22 19:13:16 2025   CORW-SW-TOAN   CORW-SW-TOAN#copy tftp: flash:
+Mon Sep 22 19:21:02 2025   R1-ISP-TOAN   Router>enable
+Mon Sep 22 19:21:02 2025   R1-ISP-TOAN   Router#configure terminal
+Mon Sep 22 19:21:03 2025   R1-ISP-TOAN   Router(config)#hostname R1-ISP-TOAN
+Mon Sep 22 19:21:31 2025   R1-ISP-TOAN   R1-ISP-TOAN(config)#interface GigabitEthernet0/0
+Mon Sep 22 19:21:31 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-if)#ip address 11.4.0.2 255.255.255.252
+Mon Sep 22 19:21:31 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-if)#no shutdown
+Mon Sep 22 19:21:35 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-if)#exit
+Mon Sep 22 19:21:50 2025   R1-ISP-TOAN   R1-ISP-TOAN(config)#interface GigabitEthernet0/1
+Mon Sep 22 19:21:50 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-if)#ip address 12.4.0.1 255.255.255.252
+Mon Sep 22 19:21:50 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-if)#no shutdown
+Mon Sep 22 19:21:50 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-if)#exit
+Mon Sep 22 19:21:50 2025   R1-ISP-TOAN   R1-ISP-TOAN(config)#end
+Mon Sep 22 19:21:51 2025   R1-ISP-TOAN   R1-ISP-TOAN#write memory
+Mon Sep 22 19:22:09 2025   R3-ISP-TOAN   Router>enable
+Mon Sep 22 19:22:09 2025   R3-ISP-TOAN   Router#configure terminal
+Mon Sep 22 19:22:10 2025   R3-ISP-TOAN   Router(config)#hostname R3-ISP-TOAN
+Mon Sep 22 19:23:27 2025   R3-ISP-TOAN   R3-ISP-TOAN(config)#interface GigabitEthernet0/1
+Mon Sep 22 19:23:27 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-if)#ip address 12.4.0.2 255.255.255.252
+Mon Sep 22 19:23:27 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-if)#no shutdown
+Mon Sep 22 19:23:35 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-if)#exit
+Mon Sep 22 19:24:51 2025   R3-ISP-TOAN   R3-ISP-TOAN(config)#no interface GigabitEthernet0/1
+Mon Sep 22 19:24:58 2025   R3-ISP-TOAN   R3-ISP-TOAN(config)#interface GigabitEthernet0/1
+Mon Sep 22 19:25:06 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-if)#no ip address 12.4.0.2 255.255.255.252
+Mon Sep 22 19:25:28 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-if)#ip address 23.4.0.1 255.255.255.252
+Mon Sep 22 19:25:30 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-if)#it
+Mon Sep 22 19:25:34 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-if)#exit
+Mon Sep 22 19:26:28 2025   R3-ISP-TOAN   R3-ISP-TOAN(config)#inter g0/0
+Mon Sep 22 19:28:03 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-if)#ip address 13.4.0.2 255.255.255.252
+Mon Sep 22 21:53:40 2025   R1-ISP-TOAN   R1-ISP-TOAN>en
+Mon Sep 22 21:53:51 2025   R1-ISP-TOAN   R1-ISP-TOAN#conf t
+Mon Sep 22 21:53:54 2025   R1-ISP-TOAN   R1-ISP-TOAN(config)#interface GigabitEthernet0/2
+Mon Sep 22 21:54:32 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-if)#ip address 13.4.0.1 255.255.255.252
+Mon Sep 22 21:54:37 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-if)#no sh
+Mon Sep 22 21:54:40 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-if)#exit
+Mon Sep 22 21:55:47 2025   R2-ISP-TOAN   Router>en
+Mon Sep 22 21:55:48 2025   R2-ISP-TOAN   Router#conf t
+Mon Sep 22 21:55:50 2025   R2-ISP-TOAN   Router(config)#interface GigabitEthernet0/0
+Mon Sep 22 21:56:34 2025   R2-ISP-TOAN   Router(config-if)#ip address 12.4.0.2 255.255.255.252
+Mon Sep 22 21:56:36 2025   R2-ISP-TOAN   Router(config-if)#no shut
+Mon Sep 22 21:56:52 2025   R2-ISP-TOAN   Router(config-if)#interface GigabitEthernet0/1
+Mon Sep 22 21:59:19 2025   R2-ISP-TOAN   Router(config-if)#ip address 23.4.0.2 255.255.255.252
+Mon Sep 22 21:59:30 2025   R2-ISP-TOAN   Router(config-if)#interface GigabitEthernet0/2
+Mon Sep 22 22:00:26 2025   R2-ISP-TOAN   Router(config-if)#interface GigabitEthernet0/2
+Mon Sep 22 22:00:26 2025   R2-ISP-TOAN   Router(config-if)#ip address 8.8.8.1 255.255.255.0
+Mon Sep 22 22:00:26 2025   R2-ISP-TOAN   Router(config-if)#no shutdown
+Mon Sep 22 22:00:26 2025   R2-ISP-TOAN   Router(config-if)#exit
+Mon Sep 22 22:00:26 2025   R2-ISP-TOAN   Router(config)#end
+Mon Sep 22 22:00:29 2025   R2-ISP-TOAN   Router#write memory
+Mon Sep 22 22:00:46 2025   R2-ISP-TOAN   Router#enable
+Mon Sep 22 22:00:46 2025   R2-ISP-TOAN   Router#configure terminal
+Mon Sep 22 22:00:47 2025   R2-ISP-TOAN   Router(config)#hostname R2-ISP-TOAN
+Mon Sep 22 22:07:58 2025   R1-ISP-TOAN   R1-ISP-TOAN>en
+Mon Sep 22 22:08:04 2025   R1-ISP-TOAN   R1-ISP-TOAN#cofn t
+Mon Sep 22 22:08:05 2025   R1-ISP-TOAN   R1-ISP-TOAN#conf t
+Mon Sep 22 22:08:07 2025   R1-ISP-TOAN   R1-ISP-TOAN(config)#router ospf 1
+Mon Sep 22 22:08:07 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-router)#router-id 1.1.1.1
+Mon Sep 22 22:08:07 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-router)#network 11.4.0.0 0.0.0.3 area 4
+Mon Sep 22 22:08:09 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-router)#network 12.4.0.0 0.0.0.3 area 4
+Mon Sep 22 22:08:15 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-router)#network 13.4.0.0 0.0.0.3 area 4
+Mon Sep 22 22:08:22 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-router)#no auto-summary
+Mon Sep 22 22:08:22 2025   R1-ISP-TOAN   R1-ISP-TOAN(config-router)#exit
+Mon Sep 22 22:08:22 2025   R1-ISP-TOAN   R1-ISP-TOAN(config)#end
+Mon Sep 22 22:08:31 2025   R1-ISP-TOAN   R1-ISP-TOAN#write memory
+Mon Sep 22 22:08:59 2025   R3-ISP-TOAN   R3-ISP-TOAN>en
+Mon Sep 22 22:09:00 2025   R3-ISP-TOAN   R3-ISP-TOAN#conf t
+Mon Sep 22 22:09:02 2025   R3-ISP-TOAN   R3-ISP-TOAN(config)#router ospf 1
+Mon Sep 22 22:09:02 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-router)#router-id 3.3.3.3
+Mon Sep 22 22:09:19 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-router)#network 13.4.0.0 0.0.0.3 area 4
+Mon Sep 22 22:09:27 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-router)#network 23.4.0.0 0.0.0.3 area 4
+Mon Sep 22 22:09:44 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-router)#no su
+Mon Sep 22 22:09:46 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-router)#no auto-summary
+Mon Sep 22 22:09:46 2025   R3-ISP-TOAN   R3-ISP-TOAN(config-router)#exit
+Mon Sep 22 22:09:46 2025   R3-ISP-TOAN   R3-ISP-TOAN(config)#end
+Mon Sep 22 22:09:48 2025   R3-ISP-TOAN   R3-ISP-TOAN#write memory
+Mon Sep 22 22:10:13 2025   R2-ISP-TOAN   R2-ISP-TOAN(config)#router ospf 1
+Mon Sep 22 22:10:13 2025   R2-ISP-TOAN   R2-ISP-TOAN(config-router)#router-id 2.2.2.2
+Mon Sep 22 22:10:18 2025   R2-ISP-TOAN   R2-ISP-TOAN(config-router)#network 23.4.0.0 0.0.0.3 area 4
+Mon Sep 22 22:10:29 2025   R2-ISP-TOAN   R2-ISP-TOAN(config-router)#network 23.4.0.0 0.0.0.3 area 4
+Mon Sep 22 22:10:39 2025   R2-ISP-TOAN   R2-ISP-TOAN(config-router)#network 12.4.0.0 0.0.0.3 area 4
+Mon Sep 22 22:10:46 2025   R2-ISP-TOAN   R2-ISP-TOAN(config-router)#network 8.8.8.0 0.0.0.255 area 4
+Mon Sep 22 22:10:46 2025   R2-ISP-TOAN   R2-ISP-TOAN(config-router)#no auto-summary
+Mon Sep 22 22:10:46 2025   R2-ISP-TOAN   R2-ISP-TOAN(config-router)#exit
+Mon Sep 22 22:10:46 2025   R2-ISP-TOAN   R2-ISP-TOAN(config)#end
+Mon Sep 22 22:10:48 2025   R2-ISP-TOAN   R2-ISP-TOAN#write memory
+Mon Sep 22 22:11:05 2025   R1-ISP-TOAN   R1-ISP-TOAN#sho ip os nei
+Mon Sep 22 22:11:25 2025   R3-ISP-TOAN   R3-ISP-TOAN#sho ip os nei
+Mon Sep 22 22:11:32 2025   R2-ISP-TOAN   R2-ISP-TOAN#sho ip os nei
+Mon Sep 22 22:30:26 2025   CORW-SW-TOAN   CORW-SW-TOAN>en
+Mon Sep 22 22:30:30 2025   CORW-SW-TOAN   CORW-SW-TOAN#en
+Mon Sep 22 22:30:37 2025   CORW-SW-TOAN   CORW-SW-TOAN#cconf t
+Mon Sep 22 22:30:40 2025   CORW-SW-TOAN   CORW-SW-TOAN#conf t
+Mon Sep 22 22:30:42 2025   CORW-SW-TOAN   CORW-SW-TOAN(config)#copy tftp: flash:
+Mon Sep 22 22:30:47 2025   CORW-SW-TOAN   CORW-SW-TOAN#copy tftp: flash:
+Mon Sep 22 22:30:59 2025   CORW-SW-TOAN   CORW-SW-TOAN#copy tftp: flash:
+Mon Sep 22 22:31:16 2025   CORW-SW-TOAN   CORW-SW-TOAN#copy tftp: flash:
+Mon Sep 22 22:31:47 2025   R-WAN-TOAN   R-WAN-TOAN>en
+Mon Sep 22 22:31:52 2025   R-WAN-TOAN   R-WAN-TOAN#copy running-config tftp
+Mon Sep 22 22:34:18 2025   ACC3   ACC3-TOAN>en
+Mon Sep 22 22:34:24 2025   ACC3   ACC3-TOAN#n.Sao lu cu hnh ca cc SW-L2, SWL3, R-WAN lu vo TFTP Server (TFTP Server chy trn my DHCP Server, file cu hnh  tn mc nh).
+Mon Sep 22 22:34:53 2025   R-WAN-TOAN   R-WAN-TOAN#copy tftp: flash:
+Mon Sep 22 22:35:12 2025   R-WAN-TOAN   R-WAN-TOAN#copy tftp: flash:
+Mon Sep 22 22:37:40 2025   ACC1   ACC1-TOAN>EN
+Mon Sep 22 22:37:46 2025   ACC1   ACC1-TOAN#copy running-config tftp:
+Mon Sep 22 22:40:46 2025   ACC1   ACC1-TOAN#conf t
+Mon Sep 22 22:40:46 2025   ACC1   ACC1-TOAN(config)#interface vlan 60
+Mon Sep 22 22:40:46 2025   ACC1   ACC1-TOAN(config-if)#ip address 172.24.60.10 255.255.255.0
+Mon Sep 22 22:40:46 2025   ACC1   ACC1-TOAN(config-if)#no shut
+Mon Sep 22 22:40:46 2025   ACC1   ACC1-TOAN(config-if)#exit
+Mon Sep 22 22:40:46 2025   ACC1   ACC1-TOAN(config)#ip default-gateway 172.24.60.1
+Mon Sep 22 22:41:15 2025   ACC1   ACC1-TOAN(config)#copy running-config tftp
+Mon Sep 22 22:41:21 2025   ACC1   ACC1-TOAN#copy running-config tftp
+Mon Sep 22 22:41:54 2025   ACC1   ACC1-TOAN#copy running-config tftp
+Mon Sep 22 22:42:30 2025   ACC1   ACC1-TOAN#conf t
+Mon Sep 22 22:42:37 2025   ACC1   ACC1-TOAN(config)#no interface vlan 60
+Mon Sep 22 22:43:43 2025   R-WAN-TOAN   R-WAN-TOAN#sho run
