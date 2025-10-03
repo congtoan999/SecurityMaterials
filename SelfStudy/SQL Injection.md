@@ -1,7 +1,5 @@
 # SQL Injection: Potential risks and effective prevention methods
 
-<small>*Updated date: May 16, 2024*</small>
-
 ## Content of the post:
 [I. What is SQL Injection (SQLi)?](#what-is-sql-injection)
 
