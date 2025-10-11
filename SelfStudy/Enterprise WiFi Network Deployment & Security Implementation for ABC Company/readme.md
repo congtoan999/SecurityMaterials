@@ -1,1 +1,24 @@
 
+# Enterprise WiFi Network Deployment & Security Implementation for ABC Company
+
+## Project Overview
+This repository contains the project files for "Enterprise WiFi Network Deployment & Security Implementation for ABC Company" a network infrastructure design and implementation project conducted from November 2024 to January 2025. The project focuses on designing a secure and efficient LAN & WiFi network for the ABC Enterprise.
+
+## Project Details
+- **Tasks Performed**:
+  - Designed and implemented LAN & WiFi network using Router, Switch Layer 2 & 3, Wireless LAN Controller (WLC), and Lightweight Access Points (LWAP) with HSRP and EtherChannel.
+  - Configured VLANs (1-Management, 10-Staff, 20-POS, 30-Guest, 40-Server) and managed IP/DHCP for 50 PCs, 20 POS devices, and 5 guest devices.
+  - Secured WiFi with WPA2/WPA3, 802.1X+RADIUS (Staff), WPA2-PSK (POS), and Captive Portal (Guest), including ACL and STP with BPDU Guard.
+  - Simulated WiFi Mesh on Cisco, achieving seamless roaming <50ms, with connection and redundancy testing.
+  - Proposed monitoring with Cisco Prime, firmware updates, and interference analysis for performance optimization.
+- **Role**: Team Leader, responsible for research, configuration, and task delegation.
+- **Files Included**:
+  - `Enterprise WiFi Network Deployment & Security Implementation for ABC Company.zip`: Contains the complete project documentation and configurations.
+
+## How to Access
+1. Download the ZIP file: `Enterprise WiFi Network Deployment & Security Implementation for ABC Company.zip`.
+2. Extract the contents to view the project report and supporting materials (e.g., network diagrams, configuration scripts).
+3. For detailed review, open the PDF or related files included in the ZIP.
+
+## GitHub Repository
+https://github.com/congtoan999/SecurityMaterials/tree/main/SelfStudy
